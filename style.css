@@ -1,0 +1,61 @@
+ body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: darkgray;
+}
+
+/* Form */
+#search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: royalblue;
+    transform: scale(1.02);
+}
+
+/* Results */
+#results-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px gray;
+}
+
+.definition-item {
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+} 
