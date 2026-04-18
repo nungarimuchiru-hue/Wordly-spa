@@ -33,11 +33,11 @@ function displayResults(data) {
     const firstMeaning = data.meanings[0];
     const firstDefinition = firstMeaning.definitions[0].definition;
     const phonetic = data.phonetic || "Phonetic unavailable";
-    
+     
 // 2. Build the HTML using single quotes and +
 resultsContainer.innerHTML = 
 '<h2>' + data.word + '</h2>' + 
-'<p class="phonetic">' + phonetic + '</p>' + 
+'<p class="phonetic">' + phonetic + '</p>' +  
 '<div class="meaning">' +
 '<strong>' + firstMeaning.partOfSpeech + '</strong>' +
 '<p>' + firstDefinition + '</p>' +
